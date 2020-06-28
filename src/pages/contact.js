@@ -42,7 +42,7 @@ const ContactPage = ({ data, location, props }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="Contact" />
       <h1>Contact</h1>
-      <form netlify action="/" name="contactN" method="post" onSubmit={handleSubmit}>
+      <form data-netlify="true" action="/" name="contactN" method="post" onSubmit={handleSubmit}>
         <p>
           <label>Your Name: <input type="text" name="name" /></label>   
         </p>
